@@ -1,39 +1,8 @@
 import requests
 import json
+from weightAndHeight import getWeightAndHeight
+from baseStats import getBaseStats
 
-
-def getWeightAndHeight(name):
-    if name:
-        URL_POKE = "https://pokeapi.co/api/v2/pokemon/"
-        response2 = requests.get(URL_POKE + name)
-        
-        if response2.status_code == 200:
-            response_json2 = json.loads(response2.text)
-
-            id_pokemon = response_json2['id']
-            weight = response_json2['weight']
-            height = response_json2['height']
-            print('Pokemon ID: {}'.format(id_pokemon))
-            print('Weight: {}'.format(weight))
-            print('Height: {}'.format(height))
-    else:
-        print('No data for {}'.format(name))
-        
-def getBaseStats(name):
-    if name:
-        URL_STATS = "https://pokeapi.co/api/v2/pokemon/"
-        response3 = requests.get(URL_STATS + name)
-        
-        if response3.status_code == 200:
-            response_json3 = json.loads(response3.text)
-
-            stats = response_json3['stats']
-            for ability in range(len(stats)):
-                abilityName = stats[ability]['stat']['name']
-                abilityRange = stats[ability]['base_stat']
-                print('\t' + abilityName + ' : ' + str(abilityRange)) 
-    else:
-        print('No data for {}'.format(name))
 
 def getRequestData():
     URL = "https://pokeapi.co/api/v2/evolution-chain/"
