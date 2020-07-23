@@ -2,6 +2,7 @@ import requests
 import json
 from weightAndHeight import getWeightAndHeight
 from baseStats import getBaseStats
+from genDict import generateDicts
 
 
 def getRequestData():
@@ -55,7 +56,6 @@ def getRequestData():
             print('*** End of the evolution chain # {} ***'.format(input_id))
     else:
         print('*** ¡Invalid Id! Please Restart the Script and Try again ***') #optimizar para validacion de enteros en el inicio del input
-
 
 if __name__ == '__main__':
     getRequestData()

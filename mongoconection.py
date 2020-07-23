@@ -7,6 +7,7 @@ my_collection = my_db.pokemones
 try:
     print("MongoDB version is %s" %
             client.server_info()['version'])
+    print('MongoDB connection established')
 except pymongo.errors.OperationFailure as error:
     print(error)
     quit(1)
