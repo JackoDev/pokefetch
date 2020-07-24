@@ -73,6 +73,11 @@ Replace `name` with the Pokemon's name to search the data about it.
 
 The project uses the Atlas cloud service for the mongoDB system data bases.
 
+You can view a little demo on video about the scripts working:
+
+Part 1 - Command :      https://youtu.be/HJc0saozGdE
+Part 2 - Web Service:   https://youtu.be/e-21d-tqEao
+
 
 ## Environment
 
