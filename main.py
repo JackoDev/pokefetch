@@ -60,8 +60,7 @@ def getRequestData():
                         print('+ Base Stats:')
                         getBaseStats(name3)
                     else:
-                        print
-                        ('*** End of the evo-chain # {} ***'.format(input_id))
+                        print('*** End of the evo-chain # {} ***'.format(input_id))
                 else:
                     print('*** End of the evo-chain # {} ***'.format(input_id))
             else:
