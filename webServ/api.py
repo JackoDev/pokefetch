@@ -14,9 +14,11 @@ app = Flask(__name__)
 @app.route("/")
 def homePage():
     try:
-    # namePoke = input('Enter the Pokemon name to search: ')
-    # consulta(namePoke)
-        return "You are now conected to the server, please type in your url box the Pokemon's name to search it:  i.e. localhost:5000/bulbasaur for search bulbasaur's info"
+        # namePoke = input('Enter the Pokemon name to search: ')
+        # consulta(namePoke)
+        confirm = "You are now conected to the server,\n\nplease type in your url box the Pokemon's name to search it:\n\t"
+        confirm2 = "i.e,\n\t\tlocalhost:5000/bulbasaur\n\tfor search bulbasaur's info"
+        return confirm + confirm2
     except:
         return "Server error"
 
