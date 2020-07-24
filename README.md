@@ -69,7 +69,7 @@ Use a production WSGI server instead.
 
 After this you would open your web browser and go to `http://127.0.0.1:5000/<name>`
 
-Replace '<name>' with the Pokemon's name to search the data about it.
+Replace `name` with the Pokemon's name to search the data about it.
 
 The project uses the Atlas cloud service for the mongoDB system data bases.
 
