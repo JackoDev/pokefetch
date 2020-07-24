@@ -1,4 +1,4 @@
-# Pokefetch - a use for the PokeApi # 3
+# Pokefetch - a use for the PokeApi
 
 
 ## Description
